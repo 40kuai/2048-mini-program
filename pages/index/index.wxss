@@ -1,0 +1,148 @@
+/* 游戏整体容器 */
+.container {
+  padding: 20rpx;
+  background-color: #faf8ef;
+  height: 100vh;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* 游戏头部 */
+.header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30rpx;
+}
+
+.scores {
+  display: flex;
+}
+
+.score-box {
+  background: #bbada0;
+  padding: 10rpx 20rpx;
+  border-radius: 6rpx;
+  margin-right: 20rpx;
+  text-align: center;
+  min-width: 120rpx;
+}
+
+.score-title {
+  color: #eee4da;
+  font-size: 24rpx;
+  display: block;
+}
+
+.score-value {
+  color: white;
+  font-size: 36rpx;
+  font-weight: bold;
+}
+
+.new-game {
+  background: #8f7a66;
+  color: white;
+  padding: 15rpx 30rpx;
+  border-radius: 6rpx;
+  font-weight: bold;
+}
+
+/* 游戏主区域 */
+.game-container {
+  width: 100%;
+  height: 750rpx;
+  max-width: 750rpx;
+  max-height: 750rpx;
+  background: #bbada0;
+  border-radius: 12rpx;
+  padding: 15rpx;
+  box-sizing: border-box;
+  position: relative;
+}
+
+.grid-container {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  grid-gap: 15rpx;
+}
+
+.grid-cell {
+  background-color: #ccc0b3;
+  border-radius: 6rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 48rpx;
+  font-weight: bold;
+  color: #776e65;
+}
+
+/* 不同数值的方块颜色 */
+.tile-2, .tile-4 {
+  color: #776e65;
+}
+
+.tile-8, .tile-16, .tile-32, .tile-64 {
+  color: #f9f6f2;
+}
+
+.tile-128, .tile-256, .tile-512, .tile-1024, .tile-2048 {
+  color: #f9f6f2;
+  font-size: 40rpx;
+}
+
+/* 游戏状态提示 */
+.game-message {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(238, 228, 218, 0.73);
+  z-index: 100;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 12rpx;
+}
+
+.message-text {
+  font-size: 60rpx;
+  font-weight: bold;
+  color: #776e65;
+  margin-bottom: 30rpx;
+}
+
+.message-buttons {
+  display: flex;
+}
+
+.button {
+  background: #8f7a66;
+  color: white;
+  padding: 15rpx 30rpx;
+  border-radius: 6rpx;
+  margin: 0 10rpx;
+  font-weight: bold;
+}
+
+/* 游戏说明 */
+.game-instructions {
+  margin-top: 30rpx;
+  text-align: center;
+  color: #776e65;
+}
+
+.game-instructions text {
+  display: block;
+  font-size: 28rpx;
+  line-height: 1.5;
+}

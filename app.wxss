@@ -1,0 +1,16 @@
+/**app.wxss**/
+page {
+  background: #faf8ef;
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  font-size: 14px;
+}
+
+.container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  padding: 20rpx;
+}
